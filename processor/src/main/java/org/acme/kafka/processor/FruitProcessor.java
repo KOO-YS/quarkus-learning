@@ -56,9 +56,11 @@ public class FruitProcessor {
 
     @Incoming("fruit-produce")
     public Fruit process(Fruit fruit) {
-        System.out.println("processor get fruit -> "+fruit);
-        System.out.println(fruit.toString());
 
-        return fruit;
+        Fruit result = resource.add(fruit);
+        System.out.println("DB save() -> "+result);
+        System.out.println(result.toString());
+
+        return result;
     }
 }

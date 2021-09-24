@@ -32,7 +32,7 @@ public class FruitResource {
     @POST
     public Fruit createFruit(Fruit fruit) {
         System.out.println("send : "+fruit);
-
+        fruitEmitter.send(fruit);
         return fruit;
     }
 }
