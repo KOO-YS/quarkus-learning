@@ -66,14 +66,14 @@
       <scope>test</scope>
     </dependency>
     <!-- sqs-->
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>io.quarkus</groupId>
-      <artifactId>quarkus-resteasy-mutiny</artifactId>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>io.quarkus</groupId>-->
+<!--      <artifactId>quarkus-resteasy</artifactId>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>io.quarkus</groupId>-->
+<!--      <artifactId>quarkus-resteasy-mutiny</artifactId>-->
+<!--    </dependency>-->
     <dependency>
       <groupId>io.quarkus</groupId>
       <artifactId>quarkus-amazon-sqs</artifactId>
@@ -82,10 +82,18 @@
       <groupId>software.amazon.awssdk</groupId>
       <artifactId>url-connection-client</artifactId>
     </dependency>
-    <dependency>
-      <groupId>software.amazon.awssdk</groupId>
-      <artifactId>netty-nio-client</artifactId>
-    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>software.amazon.awssdk</groupId>-->
+<!--      <artifactId>netty-nio-client</artifactId>-->
+<!--    </dependency>-->
+    <!-- https://github.com/awsdocs/aws-doc-sdk-examples/blob/master/java/example_code/sqs/src/main/java/aws/example/sqs/SendReceiveMessages.java -->
+    <!-- https://mvnrepository.com/artifact/com.amazonaws/aws-java-sdk-sqs -->
+<!--    <dependency>-->
+<!--      <groupId>com.amazonaws</groupId>-->
+<!--      <artifactId>aws-java-sdk-sqs</artifactId>-->
+<!--      <version>1.12.74</version>-->
+<!--    </dependency>-->
+
   </dependencies>
   <build>
     <plugins>
