@@ -1,0 +1,8 @@
+org\acme\kafka\model\Quote.class
+org\acme\kafka\model\Fruit.class
+META-INF\panache-archive.marker
+org\acme\kafka\processor\FruitProcessor.class
+org\acme\kafka\processor\QuotesProcessor.class
+org\acme\GreetingResource.class
+org\acme\kafka\model\FruitDeserializer.class
+org\acme\kafka\resource\FruitResource.class

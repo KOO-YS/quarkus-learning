@@ -1,0 +1,8 @@
+org\acme\kafka\model\Quote.class
+org\acme\kafka\model\Fruit.class
+org\acme\kafka\producer\LotteryResource.class
+org\acme\kafka\model\Lottery.class
+org\acme\kafka\producer\QuotesResource.class
+org\acme\kafka\model\QuoteDeserializer.class
+org\acme\kafka\producer\FruitResource.class
+org\acme\ReactiveGreetingResource.class

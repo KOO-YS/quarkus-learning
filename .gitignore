@@ -12,7 +12,7 @@ release.properties
 bin/
 
 # IntelliJ
-.idea
+../.idea
 *.ipr
 *.iml
 *.iws
@@ -37,4 +37,15 @@ nb-configuration.xml
 
 # Local environment
 .env
-/processor/pom.xml
+/kafka-messaging/processor/pom.xml
+/.idea/*
+/.idea/.name
+/.idea/compiler.xml
+/.idea/encodings.xml
+/.idea/jarRepositories.xml
+/.idea/jpa-buddy.xml
+/.idea/misc.xml
+/.idea/modules.xml
+/.idea/runConfigurations.xml
+/.idea/vcs.xml
+/.idea/workspace.xml
