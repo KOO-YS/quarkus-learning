@@ -1,6 +1,6 @@
 package com.yaans.entity;
 
-import io.quarkus.hibernate.reactive.panache.PanacheEntityBase;
+import io.quarkus.hibernate.reactive.panache.PanacheEntity;
 import lombok.Getter;
 
 import javax.persistence.Entity;
@@ -11,7 +11,7 @@ import java.util.List;
 
 @Entity
 @Getter
-public class Basket extends PanacheEntityBase {
+public class Basket extends PanacheEntity {
 
     @Id
     private Long basketId;

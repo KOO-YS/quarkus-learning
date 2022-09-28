@@ -1,7 +1,7 @@
 package com.yaans.entity;
 
 
-import io.quarkus.hibernate.reactive.panache.PanacheEntityBase;
+import io.quarkus.hibernate.reactive.panache.PanacheEntity;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
@@ -17,7 +17,7 @@ import javax.persistence.Id;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class Fruit extends PanacheEntityBase {
+public class Fruit extends PanacheEntity {
 
     @Id
     private Long fruitId;

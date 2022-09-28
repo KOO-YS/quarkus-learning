@@ -1,9 +1,11 @@
 package com.yaans;
 
 import com.yaans.entity.Fruit;
+import com.yaans.repository.FruitRepository;
 import io.quarkus.hibernate.reactive.panache.Panache;
 import io.smallrye.mutiny.Uni;
 
+import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
@@ -14,6 +16,8 @@ import javax.ws.rs.core.Response;
 @Path("/fruit")
 public class FruitResource {
 
+    @Inject
+    FruitRepository fruitRepository;
 
     @GET
     @Path("c")
