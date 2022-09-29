@@ -1,7 +1,7 @@
-package com.yaans;
+package com.yaans.jdbc;
 
-import com.yaans.entity.Fruit;
-import com.yaans.repository.FruitRepository;
+import com.yaans.jdbc.entity.Fruit;
+import com.yaans.jdbc.repository.FruitRepository;
 import io.quarkus.hibernate.reactive.panache.Panache;
 import io.smallrye.mutiny.Uni;
 
@@ -23,7 +23,7 @@ public class FruitResource {
     @Path("c")
     public Uni<Response> create() {
         Fruit f = Fruit.builder()
-            .fruitId(1L)
+//            .fruitId(1L)
             .name("Apple")
             .price(2000)
         .build();
@@ -37,7 +37,7 @@ public class FruitResource {
     @Path("r")
     public Uni<Response> read() {
         Fruit f = Fruit.builder()
-            .fruitId(1L)
+//            .fruitId(1L)
             .build();
         return Fruit.<Fruit>findById(1L)
             .onItem()
@@ -49,7 +49,7 @@ public class FruitResource {
     @Path("u")
     public Uni<Response> update() {
         Fruit f = Fruit.builder()
-            .fruitId(1L)
+//            .fruitId(1L)
             .name("Banana")
             .price(3000)
             .build();

@@ -1,8 +1,7 @@
-package com.yaans.repository;
+package com.yaans.jdbc.repository;
 
-import com.yaans.entity.Fruit;
+import com.yaans.jdbc.entity.Fruit;
 import io.quarkus.hibernate.reactive.panache.PanacheRepository;
-import io.smallrye.mutiny.Uni;
 
 import javax.enterprise.context.ApplicationScoped;
 
