@@ -1,6 +1,6 @@
-package com.yaans.repository;
+package com.yaans.jdbc.repository;
 
-import com.yaans.entity.Basket;
+import com.yaans.jdbc.entity.Basket;
 import io.quarkus.hibernate.reactive.panache.PanacheRepository;
 
 import javax.enterprise.context.ApplicationScoped;
