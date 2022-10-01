@@ -12,7 +12,6 @@ import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
 import java.sql.SQLException;
-
 /**
  * Default CRUD using One Entity
  */
@@ -31,7 +30,6 @@ public class FruitResource {
 //    public Uni<Boolean> healthy() throws SQLException {
 //        return Uni.createFrom().item(jdbcDataSource.isHealthy(true));
 //    }
-
     @GET
     @Path("c")
     public Uni<Response> create() {
