@@ -2,6 +2,8 @@ package com.yaans.jdbc;
 
 import com.yaans.jdbc.entity.Fruit;
 import com.yaans.jdbc.repository.FruitRepository;
+import io.agroal.api.AgroalDataSource;
+import io.quarkus.agroal.DataSource;
 import io.quarkus.hibernate.reactive.panache.Panache;
 import io.smallrye.mutiny.Uni;
 
@@ -9,7 +11,7 @@ import javax.inject.Inject;
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.core.Response;
-
+import java.sql.SQLException;
 /**
  * Default CRUD using One Entity
  */
@@ -17,8 +19,17 @@ import javax.ws.rs.core.Response;
 public class FruitResource {
 
     @Inject
+    @DataSource("jdbc-entity")
+    AgroalDataSource jdbcDataSource;
+
+    @Inject
     FruitRepository fruitRepository;
 
+//    @GET
+//    @Path("health")
+//    public Uni<Boolean> healthy() throws SQLException {
+//        return Uni.createFrom().item(jdbcDataSource.isHealthy(true));
+//    }
     @GET
     @Path("c")
     public Uni<Response> create() {
